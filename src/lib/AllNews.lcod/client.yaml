@@ -1,0 +1,22 @@
+content:
+  - component: FlowContainer
+    slots:
+      default:
+        - component: FlowItem
+          slots:
+            default:
+            - component: News
+              properties:
+                edition: tag/ai
+        - component: FlowItem
+          slots:
+            default:
+            - component: News
+              properties:
+                edition: category/science
+        - component: FlowItem
+          slots:
+            default:
+            - component: News
+              properties:
+                edition: category/culture
