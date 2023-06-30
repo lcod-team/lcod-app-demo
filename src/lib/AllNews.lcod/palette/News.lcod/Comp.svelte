@@ -10,7 +10,7 @@
 </script>
 
 {#if live}
-	<div class="news" in:fade={{ delay: 250, duration: 300 }}>
+	<div class="news" in:fade|global={{ delay: 250, duration: 300 }}>
 		<Box --style="none" --background="#ccffcc">
 			<Box --align="center" --background="#ffffcc"
 				>{edition.replace(/.*?(\w+$)/, '$1').toUpperCase()}</Box
@@ -22,7 +22,7 @@
 					let:description
 					let:link
 					let:image
-					transition:slide={{ delay: 0, duration: 500 }}
+					transition:slide|global={{ delay: 0, duration: 500 }}
 				>
 					<Card {title} description={description == title ? '' : description} {link} {image} />
 				</div>

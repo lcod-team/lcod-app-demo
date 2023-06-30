@@ -5,18 +5,18 @@ content:
         - component: FlowItem
           slots:
             default:
-            - component: News
-              properties:
-                edition: tag/ai
+              - component: News
+                properties:
+                  edition: tag/ai
         - component: FlowItem
           slots:
             default:
-            - component: News
-              properties:
-                edition: category/science
+              - component: News
+                properties:
+                  edition: category/science
         - component: FlowItem
           slots:
             default:
-            - component: News
-              properties:
-                edition: category/culture
+              - component: News
+                properties:
+                  edition: category/culture
